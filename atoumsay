@@ -16,8 +16,6 @@ then
         if [ $(echo $2 | grep -e '^\-') ]
         then
             NAME=$2
-        else
-            NAME='-b'
         fi
     fi
 fi
@@ -27,14 +25,17 @@ fi
 
 case $NAME in
 '-b')
-   NAME='BLUE'
-   ;;
+    NAME='BLUE'
+    ;;
 '-r')
-   NAME='RED'
-   ;;
+    NAME='RED'
+    ;;
 '-g')
-   NAME='GREEN'
-   ;;
+    NAME='GREEN'
+    ;;
+*)
+    NAME='BLUE'
+    ;;
 esac
 
 RESET="[0m"
