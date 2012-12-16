@@ -1,4 +1,6 @@
 script:
+    - ./atoumsay
     - ./atoumsay 'Hey, I can also talk on Travis'
+    - ./atoumsay -b 'Hey, I can also talk on Travis with my blue theme'
     - ./atoumsay -g 'Hey, I can also talk on Travis with my red theme'
     - ./atoumsay -r 'Hey, I can also talk on Travis with my green theme'
