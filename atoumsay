@@ -47,7 +47,7 @@ RED=("[48;5;16m" "[48;5;231m" "[48;5;211m" "[48;5;124m" "[48;5;218m" "[48;
 THEME=($(eval "echo \${${NAME}[0]}") $(eval "echo \${${NAME}[1]}") $(eval "echo \${${NAME}[2]}") $(eval "echo \${${NAME}[3]}") $(eval "echo \${${NAME}[4]}") $(eval "echo \${${NAME}[5]}") $(eval "echo \${${NAME}[6]}"))
 
 ATOUM=$(cat <<EOF
-              ${THEME[0]}  ${RESET}   ${RESET}                             ${RESET} ${THEME[0]}  ${RESET}
+              ${THEME[0]}  ${RESET}                                 ${THEME[0]}  ${RESET}
             ${THEME[0]}    ${RESET}                                 ${THEME[0]}   ${RESET}
             ${THEME[0]}  ${THEME[1]} ${THEME[2]} ${THEME[0]}  ${RESET}                             ${THEME[0]}  ${THEME[2]} ${THEME[1]} ${THEME[0]} ${RESET}
             ${THEME[0]}  ${THEME[1]} ${THEME[2]}   ${THEME[0]}                             ${THEME[2]}   ${THEME[1]} ${THEME[0]} ${RESET}
