@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -z "$1" ]
+if [ -n "$1" ]
 then
     if [ $(echo $1 | grep -e '^\-') ]
     then
